@@ -14,7 +14,7 @@ const TodoForm = ({ addTodo }) => {
     };
     return ( 
         <form onSubmit={handleSubmit}>
-            <input type="text"
+            <input className="bg-gray-100 rounded outline-0" type="text"
             value = {text}
             onChange={(e) => setText(e.target.value)}
             placeholder="Add Todo..."/>

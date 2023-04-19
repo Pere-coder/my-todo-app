@@ -16,9 +16,11 @@ const TodoPage = () => {
         };
 
         return (
-            <div>
-                <TodoForm addTodo={addTodo}/>
-                <TodoList todos={todos} deleteTodo={deleteTodo}/>
+            <div className="flex justify-center items-center  mt-10 ">
+                <div className=" text-center bg-blue-100 p-5 rounded w-[32rem]">
+                <TodoForm  addTodo={addTodo}/>
+                <TodoList  todos={todos} deleteTodo={deleteTodo}/>
+                </div>
                 </div>
         );
 
